@@ -1,0 +1,49 @@
+﻿<ion-view view-title="Thông tin khảo sát - Gia cầm" ng-init="initGiaCam()">
+    <ion-content>
+        <center><h3 class="padding-top">Gia cầm</h3></center>
+        <!-- CON CO -->
+        <div class="card">
+            <div class="item item-divider">
+                Sản lượng
+            </div>
+            <div class="item item-text-wrap" style="padding: 2px;">
+                <div class="row">
+                    <div class="col-survey-title padding-left" style="max-width:60px;">Gà</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="giacam.Ga" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title padding-left" style="max-width:60px;">Vịt</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="giacam.Vit" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title padding-left" style="max-width:60px;">Cút</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="giacam.Cut" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CON CO -->
+
+        <div class="row">
+            <br>
+        </div>
+        <!--Done-->
+        <div class="row">
+            <button class="button button-positive icon icon-right ion-checkmark-round col col-center" ng-click="updateGiaCam()">Xong</button>
+        </div>
+        <div class="row">
+            <br>
+        </div>
+    </ion-content>
+</ion-view>

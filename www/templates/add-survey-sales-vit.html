@@ -1,0 +1,298 @@
+﻿<ion-view view-title="Thông tin khảo sát - VỊT">
+    <ion-content>
+        <center><h3 class="padding-top">VỊT</h3></center>
+        <!-- CON CÒ-->
+        <div class="card">
+            <div class="item item-divider">
+                CON CÒ
+                <span style="float:right;">
+                    <input type="radio" value="0" ng-model="survey.VIT_CC" ng-change="setUpdate()">
+                    Không KD &nbsp;
+                    <input type="radio" value="1" ng-model="survey.VIT_CC" ng-change="setUpdate()">
+                    Có KD
+                </span>
+            </div>
+            <div class="item item-text-wrap" style="padding: 2px;" , ng-show="survey.VIT_CC == 1">
+                <div class="row">
+                    <div class="col-survey-title">Mua trực tiếp</div>
+                    <div class="col-survey-title">
+                        <input type="radio" value="0" ng-model="survey.VIT_CC_MUA_TT" ng-change="setUpdate()">
+                        Không &nbsp;
+                        <input type="radio" value="1" ng-model="survey.VIT_CC_MUA_TT" ng-change="setUpdate()">
+                        Có
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt đẻ</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_CC_VD" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt thịt</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_CC_VT" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CON CÒ -->
+        <!-- DE HEUS -->
+        <div class="card">
+            <div class="item item-divider">
+                DE HEUS
+                <span style="float:right;">
+                    <input type="radio" value="0" ng-model="survey.VIT_DH" ng-change="setUpdate()">
+                    Không KD &nbsp;
+                    <input type="radio" value="1" ng-model="survey.VIT_DH" ng-change="setUpdate()">
+                    Có KD
+                </span>
+            </div>
+            <div class="item item-text-wrap" style="padding: 2px;" , ng-show="survey.VIT_DH == 1">
+                <div class="row">
+                    <div class="col-survey-title">Mua trực tiếp</div>
+                    <div class="col-survey-title">
+                        <input type="radio" value="0" ng-model="survey.VIT_DH_MUA_TT" ng-change="setUpdate()">
+                        Không &nbsp;
+                        <input type="radio" value="1" ng-model="survey.VIT_DH_MUA_TT" ng-change="setUpdate()">
+                        Có
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt đẻ</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_DH_VD" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt thịt</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_DH_VT" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- DE HEUS -->
+        <!-- CARGILL -->
+        <div class="card">
+            <div class="item item-divider">
+                CARGILL
+                <span style="float:right;">
+                    <input type="radio" value="0" ng-model="survey.VIT_CG" ng-change="setUpdate()">
+                    Không KD &nbsp;
+                    <input type="radio" value="1" ng-model="survey.VIT_CG" ng-change="setUpdate()">
+                    Có KD
+                </span>
+            </div>
+            <div class="item item-text-wrap" style="padding: 2px;" , ng-show="survey.VIT_CG == 1">
+                <div class="row">
+                    <div class="col-survey-title">Mua trực tiếp</div>
+                    <div class="col-survey-title">
+                        <input type="radio" value="0" ng-model="survey.VIT_CG_MUA_TT" ng-change="setUpdate()">
+                        Không &nbsp;
+                        <input type="radio" value="1" ng-model="survey.VIT_CG_MUA_TT" ng-change="setUpdate()">
+                        Có
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt đẻ</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_CG_VD" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt thịt</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_CG_VT" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARGILL -->
+        <!-- NEW HOPE -->
+        <div class="card">
+            <div class="item item-divider">
+                NEW HOPE
+                <span style="float:right;">
+                    <input type="radio" value="0" ng-model="survey.VIT_NH" ng-change="setUpdate()">
+                    Không KD &nbsp;
+                    <input type="radio" value="1" ng-model="survey.VIT_NH" ng-change="setUpdate()">
+                    Có KD
+                </span>
+            </div>
+            <div class="item item-text-wrap" style="padding: 2px;" , ng-show="survey.VIT_NH == 1">
+                <div class="row">
+                    <div class="col-survey-title">Mua trực tiếp</div>
+                    <div class="col-survey-title">
+                        <input type="radio" value="0" ng-model="survey.VIT_NH_MUA_TT" ng-change="setUpdate()">
+                        Không &nbsp;
+                        <input type="radio" value="1" ng-model="survey.VIT_NH_MUA_TT" ng-change="setUpdate()">
+                        Có
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt đẻ</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_NH_VD" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt thịt</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_NH_VT" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NEW HOPE -->
+        <!-- GREEN FEED -->
+        <div class="card">
+            <div class="item item-divider">
+                GREENFEED
+                <span style="float:right;">
+                    <input type="radio" value="0" ng-model="survey.VIT_GF" ng-change="setUpdate()">
+                    Không KD &nbsp;
+                    <input type="radio" value="1" ng-model="survey.VIT_GF" ng-change="setUpdate()">
+                    Có KD
+                </span>
+            </div>
+            <div class="item item-text-wrap" style="padding: 2px;" , ng-show="survey.VIT_GF == 1">
+                <div class="row">
+                    <div class="col-survey-title">Mua trực tiếp</div>
+                    <div class="col-survey-title">
+                        <input type="radio" value="0" ng-model="survey.VIT_GF_MUA_TT" ng-change="setUpdate()">
+                        Không &nbsp;
+                        <input type="radio" value="1" ng-model="survey.VIT_GF_MUA_TT" ng-change="setUpdate()">
+                        Có
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt đẻ</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_GF_VD" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt thịt</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_GF_VT" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- GREEN FEED -->
+        <!-- LAI THIEU -->
+        <div class="card">
+            <div class="item item-divider">
+                LÁI THIÊU
+                <span style="float:right;">
+                    <input type="radio" value="0" ng-model="survey.VIT_LT" ng-change="setUpdate()">
+                    Không KD &nbsp;
+                    <input type="radio" value="1" ng-model="survey.VIT_LT" ng-change="setUpdate()">
+                    Có KD
+                </span>
+            </div>
+            <div class="item item-text-wrap" style="padding: 2px;" , ng-show="survey.VIT_LT == 1">
+                <div class="row">
+                    <div class="col-survey-title">Mua trực tiếp</div>
+                    <div class="col-survey-title">
+                        <input type="radio" value="0" ng-model="survey.VIT_LT_MUA_TT" ng-change="setUpdate()">
+                        Không &nbsp;
+                        <input type="radio" value="1" ng-model="survey.VIT_LT_MUA_TT" ng-change="setUpdate()">
+                        Có
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt đẻ</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_LT_VD" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt thịt</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_LT_VT" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LAI THIEU -->
+        <!-- Khac -->
+        <div class="card">
+            <div class="item item-divider">
+                Khác
+                <span style="float:right;">
+                    <input type="radio" value="0" ng-model="survey.VIT_ANOTHER" ng-change="setUpdate()">
+                    Không KD &nbsp;
+                    <input type="radio" value="1" ng-model="survey.VIT_ANOTHER" ng-change="setUpdate()">
+                    Có KD
+                </span>
+            </div>
+            <div class="item item-text-wrap" style="padding: 2px;" , ng-show="survey.VIT_ANOTHER == 1">
+                <div class="row">
+                    <div class="col-survey-title">Mua trực tiếp</div>
+                    <div class="col-survey-title">
+                        <input type="radio" value="0" ng-model="survey.VIT_ANOTHER_MUA_TT" ng-change="setUpdate()">
+                        Không &nbsp;
+                        <input type="radio" value="1" ng-model="survey.VIT_ANOTHER_MUA_TT" ng-change="setUpdate()">
+                        Có
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt đẻ</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_ANOTHER_VD" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-survey-title">Sản lượng vịt thịt</div>
+                    <div class="col">
+                        <input type="text item-input-inset" ng-model="survey.VIT_ANOTHER_VT" ng-change="setUpdate()">
+                        <label>(tấn/tháng)</label>
+                        <div ng-include src="'templates/note-input-double.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Khac -->
+
+        <div class="row">
+            <br>
+        </div>
+        
+        <!--Next-->
+        <div class="row ">
+            <a class="button button-positive icon icon-right ion-chevron-right col col-center" ng-click="saveVit()">Tiếp Tục</a>
+        </div>
+
+        <div class="row">
+            <br>
+        </div>
+    </ion-content>
+</ion-view>
